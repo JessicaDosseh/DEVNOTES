@@ -49,7 +49,7 @@ const NavBar = (props) => {
                 return null;
               default:
                 return (
-                  <Link href='/archive' color='inherit'>
+                  <Link href='/' color='inherit'>
                     <Typography variant='caption' style={{ fontWeight: 600 }}>
                       archive
                     </Typography>
@@ -58,7 +58,7 @@ const NavBar = (props) => {
             }
           })()}
 
-          <Link href='/archive' color='inherit'>
+          <Link href='/' color='inherit'>
             {(() => {
               switch (props.theme) {
                 case 'dark':

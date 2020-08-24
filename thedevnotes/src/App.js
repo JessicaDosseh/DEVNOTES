@@ -7,9 +7,9 @@ import { ThemeProvider } from 'styled-components';
 import { useDarkMode } from './store/Mode/useDarkMode';
 import { darkMode, lightMode } from './store/Mode/theme';
 import { GlobalStyles } from './store/Mode/global';
-import './App.css';
 
 import NavCondition from './components/Navigation/NavBarCondition';
+import ComingSoon from './components/ComingSoon/ComingSoon';
 
 function App() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
@@ -26,6 +26,7 @@ function App() {
         <div className='App'>
           <GlobalStyles />
           <NavCondition theme={theme} toggleTheme={toggleTheme} />
+          <ComingSoon theme={theme} />
         </div>
       </ThemeProvider>
     </Router>
